@@ -155,13 +155,13 @@ public class NavigationDrawerFragment extends Fragment {
             gestureDetector = new GestureDetector(context, new GestureDetector.SimpleOnGestureListener(){
 
                 @Override
-                public boolean onSingleTapUp(MotionEvent e) {
+                public boolean onSingleTapUp(MotionEvent e) {//TouchUp normal
                     Log.d("Franco","onSingleTapUp"+e);
                     return true;
                 }
 
                 @Override
-                public void onLongPress(MotionEvent e) {
+                public void onLongPress(MotionEvent e) {//Long press
                     Log.d("Franco","onLongPress"+e);
                     View child = recyclerView.findChildViewUnder(e.getX(),e.getY());
                     if (child != null && clickListener!=null){

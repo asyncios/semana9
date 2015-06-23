@@ -14,7 +14,7 @@ import com.example.josuecadillo.semana9material.R;
 import java.util.Collections;
 import java.util.List;
 
-public class CustomItemAdapter extends RecyclerView.Adapter<CustomItemAdapter.CustomItemViewHolder> {
+public class CustomItemAdapter extends RecyclerView.Adapter<CustomItemAdapter.CustomItemViewHolder>  {
 
     private final LayoutInflater layouInflater;
     List<CustomItem> data = Collections.emptyList();
